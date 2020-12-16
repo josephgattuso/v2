@@ -1,4 +1,10 @@
-# gattuso.dev
+<center>
+
+<img src="https://josephgattuso.netlify.app/images/gattuso-icon.svg" width='60' />
+
+# [![Netlify Status](https://api.netlify.com/api/v1/badges/6f65b07c-faeb-464b-93b1-410c18734dda/deploy-status)](https://app.netlify.com/sites/josephgattuso/deploys)
+
+</center>
 
 My personal website and blog. This is the first time I'm combining my portfolio and blog into the same site. For as long as I can remember, I have always had my blog on a separate site/service.
 
