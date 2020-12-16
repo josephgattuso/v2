@@ -1,42 +1,100 @@
+import React, { useState, useLayoutEffect } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
+import shortid from 'shortid';
+import DarkModeToggle from './dark-mode-toggle';
+import HamburgerToggle from './hamburger-toggle';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+const NAV_LINKS = [
+  {
+    id: shortid.generate(),
+    name: 'blog',
+    path: '/blog',
+    internal: true,
+  },
+  {
+    id: shortid.generate(),
+    name: 'projects',
+    path: '/projects/',
+    internal: true,
+  },
+  {
+    id: shortid.generate(),
+    name: 'Uses',
+    path: '/uses/',
+    internal: true,
+  },
+  {
+    id: shortid.generate(),
+    name: 'Resume',
+    path: '/resume.pdf',
+    internal: false,
+  },
+];
+
+const SiteLinks = ({ toggleMobileNav }) => (
+  <>
+    {NAV_LINKS.map((item) => (
+      <li key={item.id}>
+        {item.internal ? (
+          <Link
+            to={item.path}
+            activeClassName="active"
+            partiallyActive={true}
+            onClick={toggleMobileNav}
+          >
+            {item.name}
+          </Link>
+        ) : (
+          <a href={item.path}>{item.name}</a>
+        )}
+      </li>
+    ))}
+  </>
 );
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+const Header = ({ hide, invisible }) => {
+  const [open, setOpen] = useState(false);
+
+  const toggleMobileNav = (path) => {
+    if ((path === '/' && open) || typeof path === 'object' || path === undefined) {
+      setOpen(!open);
+    }
+  };
+
+  return (
+    <header className={`${hide && 'hide'} ${invisible && 'invisible'}`}>
+      <div className="wrapper">
+        <div className="content-container">
+          <Link
+            to="/"
+            activeClassName="active"
+            className="home"
+            onClick={() => toggleMobileNav('/')}
+          >
+            Joseph Gattuso
+          </Link>
+          <nav
+            className={`${hide && 'hide'} ${invisible && 'invisible'} ${open && 'open'}`}
+            role="navigation"
+          >
+            <ul>
+              <SiteLinks toggleMobileNav={toggleMobileNav} />
+            </ul>
+          </nav>
+          <div className="action-buttons">
+            <DarkModeToggle />
+            <HamburgerToggle open={open} toggleMobileNav={toggleMobileNav} />
+          </div>
+        </div>
+      </div>
+    </header>
+  );
 };
 
-Header.defaultProps = {
-  siteTitle: ``,
+Header.propTypes = {
+  hide: PropTypes.bool.isRequired,
+  invisible: PropTypes.bool.isRequired,
 };
 
 export default Header;

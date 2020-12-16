@@ -1,12 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
-
 import SEO from './seo';
 import Header from './header';
 import Footer from './footer';
 import Image from './image';
-
 import '../scss/main.scss';
 
 const Layout = ({
@@ -23,16 +20,6 @@ const Layout = ({
   mainHeroImageAlt,
   invertMainImageFilter,
 }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   return (
     <div className="root-container">
       <SEO title={page} description={description} isBlogPost={isBlogPost} />
@@ -45,7 +32,11 @@ const Layout = ({
         <div className="title-container">
           {mainHeroImage ? (
             <div className={`hero-image-container ${invertMainImageFilter && 'invert'}`}>
-              <Image className="blog-hero-image" fileName={mainHeroImage} alt={mainHeroImageAlt} />
+              <Image
+                className="blog-hero-image"
+                fileName={mainHeroImage}
+                alt={mainHeroImageAlt}
+              ></Image>
               <h1>{mainTitle}</h1>
             </div>
           ) : (
@@ -60,7 +51,32 @@ const Layout = ({
 };
 
 Layout.propTypes = {
+  page: PropTypes.string,
   children: PropTypes.node.isRequired,
+  hideHeader: PropTypes.bool,
+  hideFooter: PropTypes.bool,
+  invisible: PropTypes.bool,
+  className: PropTypes.string,
+  isBlogPost: PropTypes.bool,
+  description: PropTypes.string,
+  mainTitle: PropTypes.string,
+  mainHeroImage: PropTypes.string,
+  mainHeroImageAlt: PropTypes.string,
+  invertMainImageFilter: PropTypes.bool,
+};
+
+Layout.defaultProps = {
+  page: '',
+  hideHeader: false,
+  hideFooter: false,
+  invisible: false,
+  className: '',
+  isBlogPost: false,
+  description: '',
+  mainTitle: '',
+  mainHeroImage: '',
+  mainHeroImageAlt: '',
+  invertMainImageFilter: false,
 };
 
 export default Layout;
