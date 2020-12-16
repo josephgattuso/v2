@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: 'Joseph Gattuso',
+    description: 'Joseph Gattuso is a software engineer based in London, UK',
+    siteUrl: 'https://josephgattuso.netlify.app',
+    image: 'https://josephgattuso.netlify.app/images/profile.jpg',
+    author: 'Joseph Gattuso',
+    social: {
+      twitter: '@twitter',
+    },
   },
   plugins: [
     `gatsby-plugin-sharp`,
