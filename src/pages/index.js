@@ -1,21 +1,53 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
+import ButtonGroup from '@material-ui/core/ButtonGroup';
+import Button from '@material-ui/core/Button';
 import Layout from '../components/layout';
 import Image from '../components/image';
-import SEO from '../components/seo';
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  <Layout hideFooter invisible className="homepage">
+    <div className="wrapper">
+      <div className="content-container with-margin">
+        <div className="profile-card">
+          <div className="title">
+            <h1>
+              Joseph <strong>Gattuso</strong>
+            </h1>
+            <h2>Software Engineer in London</h2>
+            <ButtonGroup color="primary" aria-label="outlined primary button group">
+              <Button
+                variant="outlined"
+                color="default"
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github
+              </Button>
+              <Button
+                variant="outlined"
+                color="default"
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin
+              </Button>
+            </ButtonGroup>
+          </div>
+          <Image className="profile-picture" />
+        </div>
+        <div className="description">
+          <p>Hi there! My name is Joseph and I'm a Web Developer based in London.</p>
+          <p>
+            You can also reach me on{' '}
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              Twitter
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 );
 
