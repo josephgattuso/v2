@@ -26,8 +26,8 @@ const NAV_LINKS = [
   },
   {
     id: shortid.generate(),
-    name: 'Resume',
-    path: '/resume.pdf',
+    name: 'CV',
+    path: '/sample.pdf',
     internal: false,
   },
 ];
