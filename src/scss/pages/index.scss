@@ -1,0 +1,82 @@
+.homepage {
+  .content-container {
+    .profile-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 0 1.75rem;
+
+      .title {
+        grid-column: span 2;
+        align-self: center;
+
+        h1,
+        h2 {
+          font-weight: 400;
+        }
+
+        h1 {
+          font-size: 2.3rem;
+          margin: 0 0 1rem;
+        }
+
+        h2 {
+          font-size: 1.3rem;
+          margin: 0 0 1.38rem;
+          color: var(--text-secondary);
+        }
+        .MuiButtonGroup-root {
+          a {
+            background: none;
+
+            &:hover {
+              color: var(--accent);
+            }
+
+            .MuiButton-label {
+              font-family: 'IBM Plex Sans', sans-serif;
+            }
+          }
+        }
+      }
+
+      .profile-picture {
+        width: 250px;
+        border-radius: 50%;
+      }
+    }
+
+    .description {
+      p {
+        line-height: 1.75;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .profile-card {
+        justify-content: center;
+        margin: 0 0 1.25rem;
+
+        .title {
+          order: 1;
+          width: 300px;
+          text-align: center;
+
+          h1 {
+            font-size: 2.08rem;
+          }
+
+          h2 {
+            font-size: 1.18rem;
+          }
+        }
+
+        .profile-picture {
+          width: 180px;
+          margin: 0 0 1rem;
+        }
+      }
+    }
+  }
+}

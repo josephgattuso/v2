@@ -1,0 +1,227 @@
+@import 'theme.scss';
+@import 'variables.scss';
+@import 'pages/index.scss';
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+html {
+  overflow-y: auto;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  animation: mte 1.5s 0s forwards ease-in-out;
+  transition: background-color 100ms ease-in-out, color 200ms ease-in-out !important;
+
+  p,
+  li {
+    font-size: 1rem;
+    line-height: 1.68rem;
+  }
+
+  h1,
+  h4,
+  h5 {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  h2,
+  h3,
+  h6 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+  }
+
+  h1 {
+    font-size: var(--h1-size);
+  }
+
+  h2 {
+    font-size: var(--h2-size);
+  }
+
+  h3 {
+    font-size: var(--h3-size);
+    font-style: italic;
+  }
+
+  h4 {
+    font-size: var(--h4-size);
+  }
+
+  h5 {
+    font-size: var(--h5-size);
+    font-style: italic;
+  }
+
+  h6 {
+    font-size: var(--h6-size);
+  }
+
+  small,
+  .text_small {
+    font-size: 0.8em;
+  }
+
+  ol,
+  ul {
+    li {
+      margin-bottom: 0.6rem;
+
+      ol,
+      ul {
+        margin-top: 0.6rem;
+      }
+
+      span {
+        margin-right: 0.5rem;
+      }
+
+      p {
+        display: inline-block;
+        margin: 0 0 0.6rem;
+      }
+    }
+  }
+
+  ul {
+    list-style: square;
+    padding-inline-start: 1.4rem;
+  }
+
+  figure {
+    margin: 2ch 0;
+    padding: 1ch;
+    border: 0.1ch solid var(--background-tertiary);
+    border-radius: 4px;
+
+    img {
+      width: 100%;
+      height: 430px;
+      object-position: center center;
+      margin: 0;
+      padding: 0;
+    }
+
+    figcaption {
+      padding-top: 1ch;
+      border-top: 0.75px solid var(--background-tertiary);
+      color: var(--text-secondary);
+      font-size: 0.75rem;
+      font-style: italic;
+      line-height: 1.25rem;
+      margin: 0.25rem 0 0;
+
+      &:not(:last-of-type) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  pre[class*='language-'],
+  p > code[class*='language-'],
+  li > code[class*='language-'] {
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+
+  p > code[class*='language-'],
+  li > code[class*='language-'] {
+    color: var(--text);
+    background-color: var(--background-tertiary);
+    word-break: break-word;
+  }
+
+  // TODO remove when styleguide page is refactored
+  pre {
+    overflow: auto;
+
+    & > p {
+      white-space: break-spaces;
+    }
+  }
+
+  .root-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    main {
+      &:not(.blog-index):not(.homepage) {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          &.section {
+            border-bottom: 3px solid var(--divider);
+            margin: 1rem 0 1.2rem;
+            padding: 0.25rem 0 0.55rem;
+          }
+        }
+      }
+
+      a {
+        color: var(--text);
+        text-decoration: none;
+        background-position: 0 0;
+        background-image: linear-gradient(
+          to top,
+          var(--accent),
+          var(--accent) 0.15em,
+          transparent 0.15em,
+          transparent
+        );
+        word-wrap: break-word;
+
+        &:hover {
+          color: var(--accent);
+          background-image: none;
+        }
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto;
+
+      .content-container {
+        &.with-margin {
+          margin: var(--vertical-padding)
+            calc(var(--horizontal-padding) + var(--header-icon-padding));
+          margin-top: 0;
+        }
+
+        &.with-padding {
+          padding: var(--vertical-padding)
+            calc((var(--horizontal-padding)) + var(--header-icon-padding));
+        }
+
+        .MuiButton-outlined {
+          color: var(--text);
+          border-color: var(--text-secondary);
+
+          &:hover {
+            background-color: var(--background-secondary);
+          }
+        }
+      }
+    }
+  }
+}
