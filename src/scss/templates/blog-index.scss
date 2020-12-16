@@ -1,0 +1,26 @@
+.blog-index {
+  .hero-image-container {
+    position: relative;
+
+    .blog-hero-image {
+      height: 230px;
+      filter: var(--invert-dark);
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      position: absolute;
+      color: var(--text);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+    }
+  }
+
+  nav.MuiPagination-root {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,43 @@
+.post-preview {
+  color: var(--text);
+  padding: 0 0 1rem;
+  margin: 0 auto;
+  border-bottom: 2px dotted var(--text-secondary);
+
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  .timestamp {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+  }
+
+  h2.title {
+    margin: 0.35ch 0 0.7ch;
+    font-weight: 500;
+    font-size: 1.38rem;
+
+    a {
+      color: var(--text);
+      background: none;
+    }
+  }
+
+  h3.subtitle {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+
+  p.description {
+    margin: 2ch 0 1ch;
+    line-height: 25px;
+  }
+
+  a {
+    color: var(--text);
+  }
+}

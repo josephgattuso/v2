@@ -12,11 +12,11 @@
 @import 'components/header.scss';
 @import 'components/layout.scss';
 // @import 'components/alert-banner.scss';
-// @import 'components/post-preview.scss';
+@import 'components/post-preview.scss';
 @import 'components/dark-mode-toggle.scss';
 @import 'components/hamburger-toggle.scss';
-// @import 'templates/blog-index.scss';
-// @import 'templates/blog-post.scss';
+@import 'templates/blog-index.scss';
+@import 'templates/blog-post.scss';
 
 html,
 body,
