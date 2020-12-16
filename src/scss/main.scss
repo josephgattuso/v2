@@ -1,6 +1,22 @@
+@import 'normalize-scss/sass/normalize/import-now';
+
 @import 'theme.scss';
 @import 'variables.scss';
 @import 'pages/index.scss';
+// @import 'pages/404.scss';
+// @import 'pages/debug.scss';
+// @import 'pages/projects.scss';
+// @import 'pages/uses.scss';
+// @import 'pages/styleguide.scss';
+@import 'components/footer.scss';
+@import 'components/header.scss';
+@import 'components/layout.scss';
+// @import 'components/alert-banner.scss';
+// @import 'components/post-preview.scss';
+@import 'components/dark-mode-toggle.scss';
+@import 'components/hamburger-toggle.scss';
+// @import 'templates/blog-index.scss';
+// @import 'templates/blog-post.scss';
 
 html,
 body,
@@ -127,6 +143,7 @@ body {
       }
     }
   }
+
   pre[class*='language-'],
   p > code[class*='language-'],
   li > code[class*='language-'] {

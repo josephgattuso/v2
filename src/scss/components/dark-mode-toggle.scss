@@ -1,0 +1,17 @@
+.dark-mode-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    color: var(--text-secondary);
+
+    &:hover {
+      color: var(--text);
+    }
+
+    &.MuiIconButton-root {
+      padding: var(--header-icon-padding);
+    }
+  }
+}
