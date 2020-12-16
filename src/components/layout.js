@@ -7,7 +7,7 @@ import Header from './header';
 import Footer from './footer';
 import Image from './image';
 
-import './layout.css';
+import '../scss/main.scss';
 
 const Layout = ({
   page,
