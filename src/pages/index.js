@@ -44,6 +44,7 @@ const IndexPage = () => (
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               Twitter
             </a>
+            .
           </p>
         </div>
       </div>
