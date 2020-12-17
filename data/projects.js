@@ -1,5 +1,19 @@
 export const projects = [
   {
+    name: 'Password Generator',
+    description: 'Generate a random password with specific user settings',
+    tryItUrl: 'https://josephgattuso.github.io/50-projects/password-generator',
+    repo: 'https://github.com/josephgattuso/50-projects/tree/master/password-generator',
+  },
+  {
+    name: 'Auto Text Effect',
+    description:
+      'Web component with feature typing effect. Control speed using input field or keyboard arrows.',
+    tryItUrl: 'https://josephgattuso.github.io/50-projects/auto-text-effect',
+    repo: 'https://github.com/josephgattuso/50-projects/tree/master/auto-text-effect',
+  },
+
+  {
     name: 'Hearts Click',
     description: 'Generate hearts at double-click events',
     tryItUrl: 'https://josephgattuso.github.io/50-projects/double-heart-click',
