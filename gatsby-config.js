@@ -11,12 +11,22 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sharp`,
+    `gatsby-remark-images`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 930,
+              backgroundColor: 'transparent',
+            },
+          },
+        ],
       },
     },
     {
@@ -37,14 +47,14 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/data/blog`,
-        name: 'posts',
+        name: 'post',
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/data/dev-blog`,
-        name: 'dev-posts',
+        name: 'post',
       },
     },
     {
@@ -92,13 +102,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Joseph Gattuso`,
+        short_name: `Gattuso.dev`,
         start_url: `/`,
         background_color: `#000`,
         theme_color: `#000`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gattuso-icon.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-material-ui`,
@@ -106,8 +116,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`IBM Plex Sans\:400,400i,500,500i,700`],
-        fonts: [`IBM Plex Sans Serif\:400,400i`],
-        fonts: [`IBM Plex Sans Condensed\:400,600,600i`],
+        fonts: [`IBM Plex Sans Serif\:400,400i,500,500i,700`],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
