@@ -10,12 +10,12 @@ import EmailIcon from '@material-ui/icons/Email';
 
 // eslint-disable-next-line no-unused-vars
 const SOCIAL_LINKS = [
-  {
-    id: shortid.generate(),
-    name: 'Email',
-    url: 'mailto:example@email.com',
-    component: <EmailIcon />,
-  },
+  // {
+  //   id: shortid.generate(),
+  //   name: 'Email',
+  //   url: 'mailto:example@email.com',
+  //   component: <EmailIcon />,
+  // },
   {
     id: shortid.generate(),
     name: 'Github',
