@@ -5,48 +5,34 @@ import shortid from 'shortid';
 import IconButton from '@material-ui/core/IconButton';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import YouTubeIcon from '@material-ui/icons/YouTube';
 import EmailIcon from '@material-ui/icons/Email';
 
 // eslint-disable-next-line no-unused-vars
 const SOCIAL_LINKS = [
   {
     id: shortid.generate(),
-    name: 'Twitter',
-    url: 'https://twitter.com/',
-    component: <TwitterIcon />,
+    name: 'Email',
+    url: 'mailto:example@email.com',
+    component: <EmailIcon />,
   },
   {
     id: shortid.generate(),
     name: 'Github',
-    url: 'https://github.com/',
+    url: 'https://github.com/josephgattuso',
     component: <GitHubIcon />,
   },
   {
     id: shortid.generate(),
     name: 'LinkedIn',
-    url: 'https://linkedin.com/',
+    url: 'https://linkedin.com/in/josephgattuso',
     component: <LinkedInIcon />,
   },
   {
     id: shortid.generate(),
-    name: 'YouTube',
-    url: 'https://youtube.com/',
-    component: <YouTubeIcon />,
-  },
-  {
-    id: shortid.generate(),
-    name: 'Instagram',
-    url: 'https://instagram.com/',
-    component: <InstagramIcon />,
-  },
-  {
-    id: shortid.generate(),
-    name: 'Email',
-    url: 'mailto:example@email.com',
-    component: <EmailIcon />,
+    name: 'Twitter',
+    url: 'https://twitter.com/@joeetuso',
+    component: <TwitterIcon />,
   },
 ];
 
