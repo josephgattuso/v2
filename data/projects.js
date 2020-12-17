@@ -1,6 +1,6 @@
 export const projects = [
   {
-    name: 'Double Click Hearts',
+    name: 'Hearts Click',
     description: 'Generate hearts at double-click events',
     tryItUrl: 'https://josephgattuso.github.io/50-projects/double-heart-click',
     repo: 'https://github.com/josephgattuso/50-projects/tree/master/double-heart-click',
@@ -18,7 +18,7 @@ export const projects = [
     repo: 'https://github.com/josephgattuso/50-projects/tree/master/toast-notifications',
   },
   {
-    name: 'Double Vertical Slider',
+    name: 'Vertical Slider',
     description: 'Image carousel with sliding double vertical panels',
     tryItUrl: 'https://josephgattuso.github.io/50-projects/double-vertical-slider',
     repo: 'https://github.com/josephgattuso/50-projects/tree/master/double-vertical-slider',
@@ -97,7 +97,7 @@ export const projects = [
     repo: 'https://github.com/josephgattuso/50-projects/tree/master/animated-navigation',
   },
   {
-    name: 'Random Choice Picker',
+    name: 'Random Picker',
     description: 'Enter all of the choices divided by commas. Then press enter when you are done.',
     tryItUrl: 'https://josephgattuso.github.io/50-projects/random-choice-picker',
     repo: 'https://github.com/josephgattuso/50-projects/tree/master/random-choice-picker',
@@ -133,7 +133,7 @@ export const projects = [
     repo: 'https://github.com/josephgattuso/50-projects/tree/master/form-wave',
   },
   {
-    name: 'Split Landing Page',
+    name: 'Split Landing',
     description: 'Website template with feature landing page',
     tryItUrl: 'https://josephgattuso.github.io/50-projects/split-landing',
     repo: 'https://github.com/josephgattuso/50-projects/tree/master/split-landing',
@@ -151,13 +151,13 @@ export const projects = [
     repo: 'https://github.com/josephgattuso/50-projects/tree/master/blurry-loading',
   },
   {
-    name: 'Hidden Search Widget',
-    description: 'Web component with feature search widget',
+    name: 'Search Widget',
+    description: 'Web component with feature hidden search widget',
     tryItUrl: 'https://josephgattuso.github.io/50-projects/hidden-search',
     repo: 'https://github.com/josephgattuso/50-projects/tree/master/hidden-search',
   },
   {
-    name: 'Rotating Navigation Animation',
+    name: 'Rotating Navigation',
     description: 'Web component with feature rotating navigation animation',
     tryItUrl: 'https://josephgattuso.github.io/50-projects/rotating-navigation',
     repo: 'https://github.com/josephgattuso/50-projects/tree/master/rotating-navigation',
