@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { Link, graphql, navigate } from 'gatsby';
+import Pagination from '@material-ui/lab/Pagination';
 
 import Layout from '../components/layout';
 
-const BlogIndex = ({ data }) => {
+const BlogIndex = ({ data, pageContext, path }) => {
   const { edges: mdx } = data.allMdx;
 
   return (
@@ -18,14 +19,26 @@ const BlogIndex = ({ data }) => {
         <div className="content-container with-padding">
           <div className="mdx-preview">
             {mdx.map(({ node: mdx }) => (
-              <h2 key={mdx.id}>
+              <div className="post-preview" key={mdx.id}>
                 <Link to={mdx.fields.slug}>
-                  <h2>{mdx.frontmatter.title}</h2>
+                  <h2 classname="title">{mdx.frontmatter.title}</h2>
                 </Link>
-                <p>{mdx.excerpt}</p>
-              </h2>
+                <p className="description">{mdx.excerpt}</p>
+                <Link to={mdx.fields.slug}>continue reading &rarr;</Link>
+              </div>
             ))}
           </div>
+          <Pagination
+            shape="rounded"
+            count={data.allMdx.totalCount}
+            page={pageContext.currentPage}
+            onChange={(_event, value) => {
+              navigate(`/blog${value > 1 ? `/${value}` : ''}`);
+            }}
+            // currentPage={pageContext.currentPage}
+            // totalCount={data.allMdx.totalCount}
+            // pathPrefix="/blog/"
+          />
         </div>
       </div>
     </Layout>
