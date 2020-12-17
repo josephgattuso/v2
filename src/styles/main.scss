@@ -1,22 +1,28 @@
 @import 'normalize-scss/sass/normalize/import-now';
 
-@import 'theme.scss';
-@import 'variables.scss';
-@import 'pages/index.scss';
-@import 'pages/404.scss';
-@import 'pages/debug.scss';
-@import 'pages/projects.scss';
-@import 'pages/uses.scss';
-@import 'pages/styleguide.scss';
-@import 'components/footer.scss';
-@import 'components/header.scss';
-@import 'components/layout.scss';
-// @import 'components/alert-banner.scss';
-@import 'components/post-preview.scss';
-@import 'components/dark-mode-toggle.scss';
-@import 'components/hamburger-toggle.scss';
-@import 'templates/blog-index.scss';
-@import 'templates/blog-post.scss';
+// Styles
+@import './variables.scss';
+@import './theme.scss';
+
+// Pages
+@import '../pages/index.scss';
+@import '../pages/debug.scss';
+@import '../pages/projects.scss';
+@import '../pages/uses.scss';
+@import '../pages/styleguide.scss';
+
+// Components
+@import '../components/Footer/styles.scss';
+@import '../components/Header/styles.scss';
+@import '../components/Layout/styles.scss';
+// @import '../components/alert-banner.scss';
+@import '../components/PostPreview/styles.scss';
+@import '../components/DarkModeToggle/styles.scss';
+@import '../components/HamburgerToggle/styles.scss';
+
+// Templates
+@import '../templates/blog-index.scss';
+@import '../templates/blog-post.scss';
 
 html,
 body,

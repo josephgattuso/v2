@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/layout';
-import { uses } from '../../data/uses';
+import Layout from '../components/Layout';
+import { uses } from '../../content/uses';
 
 const ItemList = ({ items, parentIndex }) => (
   <ul>

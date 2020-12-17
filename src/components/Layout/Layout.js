@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SEO from './seo';
-import Header from './header';
-import Footer from './footer';
-import Image from './image';
-import '../scss/main.scss';
+import SEO from '../seo';
+
+import Header from '../Header';
+import Footer from '../Footer';
+
+import Image from '../image';
 
 const Layout = ({
   page,

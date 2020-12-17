@@ -4,7 +4,7 @@ import IconButton from '@material-ui/core/IconButton';
 import BrightnessAutoTwoToneIcon from '@material-ui/icons/BrightnessAutoTwoTone';
 import Brightness2TwoToneIcon from '@material-ui/icons/Brightness2TwoTone';
 import WbSunnyTwoToneIcon from '@material-ui/icons/WbSunnyTwoTone';
-import { DARK_MODE } from '../utils/constants';
+import { DARK_MODE } from '../../utils/constants';
 
 class DarkModeToggle extends Component {
   constructor(props) {

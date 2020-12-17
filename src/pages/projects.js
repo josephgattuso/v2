@@ -7,8 +7,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import IconButton from '@material-ui/core/IconButton';
 import shortid from 'shortid';
 
-import Layout from '../components/layout';
-import { projects } from '../../data/projects';
+import Layout from '../components/Layout';
+import { projects } from '../../content/projects';
 
 const ProjectsPage = () => {
   return (

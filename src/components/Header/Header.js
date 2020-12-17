@@ -2,8 +2,9 @@ import React, { useState, useLayoutEffect } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
-import DarkModeToggle from './dark-mode-toggle';
-import HamburgerToggle from './hamburger-toggle';
+
+import DarkModeToggle from '../DarkModeToggle';
+import HamburgerToggle from '../HamburgerToggle';
 
 const NAV_LINKS = [
   {

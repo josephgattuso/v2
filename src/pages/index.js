@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button';
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import Image from '../components/image';
 
 const IndexPage = () => (
