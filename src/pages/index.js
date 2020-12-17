@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button';
+
 import Layout from '../components/layout';
 import Image from '../components/image';
 
@@ -13,7 +15,7 @@ const IndexPage = () => (
             <h1>
               Joseph <strong>Gattuso</strong>
             </h1>
-            <h2>Software Engineer in London</h2>
+            <h2>Web Developer in London</h2>
             <ButtonGroup color="primary" aria-label="outlined primary button group">
               <Button
                 variant="outlined"
@@ -39,6 +41,11 @@ const IndexPage = () => (
         </div>
         <div className="description">
           <p>Hi there! My name is Joseph and I'm a Web Developer based in London.</p>
+
+          <p>
+            View my <Link to="/projects">recent work</Link>.
+          </p>
+
           <p>
             You can also reach me on{' '}
             <a
