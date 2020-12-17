@@ -35,7 +35,7 @@ const ProjectsPage = () => {
                       size="small"
                       href={project.url}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                     >
                       View
                     </Button>
@@ -45,7 +45,7 @@ const ProjectsPage = () => {
                       size="small"
                       href={project.tryItUrl}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                     >
                       Try it out
                     </Button>
@@ -55,7 +55,7 @@ const ProjectsPage = () => {
                       size="small"
                       href={project.repo}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       aria-label="view source on github"
                     >
                       <GitHubIcon />

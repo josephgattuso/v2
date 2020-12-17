@@ -20,7 +20,7 @@ const IndexPage = () => (
                 color="default"
                 href="https://github.com/josephgattuso"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
               >
                 github
               </Button>
@@ -29,7 +29,7 @@ const IndexPage = () => (
                 color="default"
                 href="https://www.linkedin.com/in/josephgattuso"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
               >
                 linkedin
               </Button>
@@ -41,7 +41,11 @@ const IndexPage = () => (
           <p>Hi there! My name is Joseph and I'm a Web Developer based in London.</p>
           <p>
             You can also reach me on{' '}
-            <a href="https://twitter.com/@joeetuso" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/@joeetuso"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
               Twitter
             </a>
             .
