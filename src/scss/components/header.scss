@@ -49,7 +49,7 @@ header {
 
         &:hover,
         &:active {
-          background-color: var(--background-tertiary);
+          background: var(--background-tertiary);
           background-image: none;
         }
 
@@ -76,7 +76,7 @@ header {
     }
 
     nav {
-      background-color: var(--background);
+      background: var(--background);
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -119,7 +119,7 @@ header {
         position: absolute;
         top: calc(var(--vertical-padding) + var(--header-height));
         width: -webkit-fill-available;
-        background-color: var(--background-secondary);
+        background: var(--background-secondary);
         display: none;
         padding: var(--horizontal-padding)
           calc(var(--horizontal-padding) + var(--header-icon-padding));

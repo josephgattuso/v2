@@ -13,73 +13,73 @@
       font-size: 0.8rem;
 
       &.primary-100 {
-        background-color: var(--primary-100);
+        background: var(--primary-100);
       }
       &.primary-200 {
-        background-color: var(--primary-200);
+        background: var(--primary-200);
       }
       &.primary-300 {
-        background-color: var(--primary-300);
+        background: var(--primary-300);
       }
       &.primary-400 {
-        background-color: var(--primary-400);
+        background: var(--primary-400);
       }
       &.primary-500 {
-        background-color: var(--primary-500);
+        background: var(--primary-500);
       }
       &.primary-600 {
-        background-color: var(--primary-600);
+        background: var(--primary-600);
       }
       &.neutral-100 {
-        background-color: var(--neutral-100);
+        background: var(--neutral-100);
       }
       &.neutral-200 {
-        background-color: var(--neutral-200);
+        background: var(--neutral-200);
       }
       &.neutral-300 {
-        background-color: var(--neutral-300);
+        background: var(--neutral-300);
       }
       &.neutral-400 {
-        background-color: var(--neutral-400);
+        background: var(--neutral-400);
       }
       &.neutral-500 {
-        background-color: var(--neutral-500);
+        background: var(--neutral-500);
       }
       &.neutral-600 {
-        background-color: var(--neutral-600);
+        background: var(--neutral-600);
       }
       &.neutral-700 {
-        background-color: var(--neutral-700);
+        background: var(--neutral-700);
       }
 
       &.success-100 {
-        background-color: var(--success-100);
+        background: var(--success-100);
       }
       &.success-200 {
-        background-color: var(--success-200);
+        background: var(--success-200);
       }
       &.success-300 {
-        background-color: var(--success-300);
+        background: var(--success-300);
       }
 
       &.error-100 {
-        background-color: var(--error-100);
+        background: var(--error-100);
       }
       &.error-200 {
-        background-color: var(--error-200);
+        background: var(--error-200);
       }
       &.error-300 {
-        background-color: var(--error-300);
+        background: var(--error-300);
       }
 
       &.warning-100 {
-        background-color: var(--warning-100);
+        background: var(--warning-100);
       }
       &.warning-200 {
-        background-color: var(--warning-200);
+        background: var(--warning-200);
       }
       &.warning-300 {
-        background-color: var(--warning-300);
+        background: var(--warning-300);
       }
     }
     @media (max-width: 768px) {

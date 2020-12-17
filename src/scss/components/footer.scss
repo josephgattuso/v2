@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--background-secondary);
+  background: var(--background-secondary);
   color: var(--text-secondary);
   font-size: 0.75rem;
 
@@ -22,11 +22,15 @@ footer {
     }
 
     .MuiSvgIcon-root {
-      font-size: 1rem;
+      font-size: 1.25rem;
     }
 
     a {
       text-decoration: none;
+
+      &:hover {
+        color: var(--text);
+      }
     }
 
     .left {

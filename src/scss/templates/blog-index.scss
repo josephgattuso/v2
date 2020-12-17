@@ -8,19 +8,19 @@
     }
 
     h1 {
-      font-size: 1.7rem;
-      position: absolute;
       color: var(--text);
-      top: 50%;
+      font-size: 1.7rem;
       left: 50%;
-      transform: translate(-50%, -50%);
       margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 
   nav.MuiPagination-root {
-    margin: 1rem 0;
     display: flex;
     justify-content: center;
+    margin: 1rem 0;
   }
 }

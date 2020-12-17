@@ -2,8 +2,8 @@
   color: var(--text);
 
   .gatsby-image-wrapper {
-    max-height: 430px;
     margin-bottom: 1rem;
+    max-height: 430px;
 
     img {
       object-fit: cover !important;
@@ -68,14 +68,14 @@
       column-gap: 1rem;
 
       a {
-        border: 2px solid var(--accent);
-        border-radius: 4px;
-        text-decoration: none;
         background: none;
+        border-radius: 4px;
+        border: 2px solid var(--accent);
         padding: 1rem;
+        text-decoration: none;
 
         &:hover {
-          background-color: var(--accent);
+          background: var(--accent);
           color: var(--text);
         }
 
