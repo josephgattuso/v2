@@ -7,6 +7,8 @@ import Footer from '../Footer';
 
 import Image from '../image';
 
+import '../../styles/main.scss';
+
 const Layout = ({
   page,
   children,
