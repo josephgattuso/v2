@@ -1,19 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: 'Joseph Gattuso',
-    description: 'Joseph Gattuso is a software engineer based in London, UK',
-    siteUrl: 'https://josephgattuso.netlify.app',
-    image: 'https://josephgattuso.netlify.app/images/profile.jpg',
-    author: 'Joseph Gattuso',
+    title: `Joseph Gattuso`,
+    description: `Joseph is a web developer based in London`,
+    siteUrl: `https://gattuso.dev`,
+    image: `https://gattuso.dev/images/profile.jpg`,
+    author: `Joseph Gattuso`,
     social: {
-      twitter: '@twitter',
+      twitter: `@joeetuso`,
     },
   },
   plugins: [
-    `gatsby-plugin-sharp`,
-    `gatsby-remark-images`,
-    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-remark-images`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -32,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `local-images`,
         path: `${__dirname}/src/images`,
+        name: `local-images`,
       },
     },
     {
@@ -46,14 +47,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/data/blog`,
-        name: 'post',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/data/dev-blog`,
+        path: `${__dirname}/content/blog`,
         name: 'post',
       },
     },
@@ -111,7 +105,6 @@ module.exports = {
         icon: `src/images/gattuso-icon.svg`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
