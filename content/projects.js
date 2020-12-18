@@ -1,5 +1,47 @@
 export const projects = [
   {
+    name: 'Quotes Generator',
+    description: 'Using an API to build a random quote generator with Twitter integration.',
+    tryItUrl: 'https://josephgattuso.github.io/50-projects/quotes-generator/index',
+    repo: 'https://github.com/josephgattuso/50-projects/tree/master/quotes-generator',
+  },
+  {
+    name: 'Pokedex',
+    description: 'Find info on Pokemon with this Pokedex app. Uses the Pokeapi.co API.',
+    tryItUrl: 'https://josephgattuso.github.io/50-projects/pokedex',
+    repo: 'https://github.com/josephgattuso/50-projects/tree/master/pokedex',
+  },
+  {
+    name: 'Hoverboard',
+    description: 'Hoverboard app with color-change effect on mouse hover',
+    tryItUrl: 'https://josephgattuso.github.io/50-projects/hoverboard',
+    repo: 'https://github.com/josephgattuso/50-projects/tree/master/hoverboard',
+  },
+  {
+    name: 'Image Carousel',
+    description: 'Web component with classic image carousel',
+    tryItUrl: 'https://josephgattuso.github.io/50-projects/image-carousel',
+    repo: 'https://github.com/josephgattuso/50-projects/tree/master/image-carousel',
+  },
+  {
+    name: 'Animated Countdown',
+    description: 'Web compononet loader with feature animated countdown',
+    tryItUrl: 'https://josephgattuso.github.io/50-projects/animated-countdown',
+    repo: 'https://github.com/josephgattuso/50-projects/tree/master/animated-countdown',
+  },
+  {
+    name: 'Notes App',
+    description: 'Create, Read, Edit, and Delete notes',
+    tryItUrl: 'https://josephgattuso.github.io/50-projects/notes-app',
+    repo: 'https://github.com/josephgattuso/50-projects/tree/master/notes-app',
+  },
+  {
+    name: 'Good Cheap Fast',
+    description: 'Optimise your next project from a set of predifined criteria',
+    tryItUrl: 'https://josephgattuso.github.io/50-projects/good-cheap-fast',
+    repo: 'https://github.com/josephgattuso/50-projects/tree/master/good-cheap-fast',
+  },
+  {
     name: 'Password Generator',
     description: 'Generate a random password with specific user settings',
     tryItUrl: 'https://josephgattuso.github.io/50-projects/password-generator',
@@ -128,12 +170,7 @@ export const projects = [
     tryItUrl: 'https://josephgattuso.github.io/50-projects/event-keycodes',
     repo: 'https://github.com/josephgattuso/50-projects/tree/master/event-keycodes',
   },
-  {
-    name: 'Dad Jokes',
-    description: 'Dad style programming jokes and more; these jokes only work if you git them',
-    tryItUrl: 'https://josephgattuso.github.io/50-projects/dad-jokes/index',
-    repo: 'https://github.com/josephgattuso/50-projects/tree/master/dad-jokes',
-  },
+
   {
     name: 'Sound Board',
     description: 'Handy sound effects board',
