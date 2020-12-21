@@ -9,12 +9,12 @@ Forked from [Gatsby's starter default](https://github.com/gatsbyjs/gatsby-starte
 ## Getting Started
 
 ```sh
-git clone https://github.com/josephgattuso/v2.git
-cd v2
+git clone https://github.com/josephgattuso/gattuso.dev.git
+cd gattuso.dev
 yarn
 yarn start
 ```
 
 ## License
 
-The contents of this repository are covered under the [MIT License](https://github.com/josephgattuso/v2/blob/master/LICENSE).
+The contents of this repository are covered under the [MIT License](https://github.com/josephgattuso/gattuso.dev/blob/master/LICENSE).

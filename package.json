@@ -21,10 +21,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/josephgattuso/v2"
+    "url": "https://github.com/josephgattuso/gattuso.dev"
   },
   "bugs": {
-    "url": "https://github.com/josephgattuso/v2/issues"
+    "url": "https://github.com/josephgattuso/gattuso.dev/issues"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
