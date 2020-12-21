@@ -103,7 +103,7 @@ module.exports = {
         background_color: `#000`,
         theme_color: `#000`,
         display: `standalone`,
-        icon: `src/images/gattuso-icon.svg`, // This path is relative to the root of the site.
+        icon: `src/images/logo.svg`, // This path is relative to the root of the site.
       },
     },
     {
