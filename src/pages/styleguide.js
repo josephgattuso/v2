@@ -6,50 +6,44 @@ const StyleGuidePage = () => {
     <Layout page="Style Guide" className="StyleGuidePage" mainTitle="Style Guide">
       <div className="wrapper">
         <div className="content-container with-padding">
-          <p>
-            This style guide was adapted from{' '}
-            <a href="https://www.poormansstyleguide.com/">Poor Man's Style Guide</a> by{' '}
-            <a href="https://www.bryanbraun.com/">Bryan Braun</a>. It serves as a guide for
-            standardised styling for this site.
-          </p>
           <hr />
           <h1 id="colors">Colors</h1>
-          <h2>Primary (primary-*)</h2>
+          <h2>Primary (primary*)</h2>
           <div className="color-palette-container">
-            <div className="color-item primary-100">100</div>
-            <div className="color-item primary-200">200</div>
-            <div className="color-item primary-300">300</div>
-            <div className="color-item primary-400">400</div>
-            <div className="color-item primary-500">500</div>
-            <div className="color-item primary-600">600</div>
+            <div className="color-item primary100">100</div>
+            <div className="color-item primary200">200</div>
+            <div className="color-item primary300">300</div>
+            <div className="color-item primary400">400</div>
+            <div className="color-item primary500">500</div>
+            <div className="color-item primary600">600</div>
           </div>
-          <h2>Neutral (neutral-*)</h2>
+          <h2>Chrome (chrome*)</h2>
           <div className="color-palette-container">
-            <div className="color-item neutral-100">100</div>
-            <div className="color-item neutral-200">200</div>
-            <div className="color-item neutral-300">300</div>
-            <div className="color-item neutral-400">400</div>
-            <div className="color-item neutral-500">500</div>
-            <div className="color-item neutral-600">600</div>
-            <div className="color-item neutral-700">700</div>
+            <div className="color-item chrome100">100</div>
+            <div className="color-item chrome200">200</div>
+            <div className="color-item chrome300">300</div>
+            <div className="color-item chrome400">400</div>
+            <div className="color-item chrome500">500</div>
+            <div className="color-item chrome600">600</div>
+            <div className="color-item chrome700">700</div>
           </div>
-          <h2>Success (success-*)</h2>
+          <h2>Success (success*)</h2>
           <div className="color-palette-container">
-            <div className="color-item success-100">100</div>
-            <div className="color-item success-200">200</div>
-            <div className="color-item success-300">300</div>
+            <div className="color-item success100">100</div>
+            <div className="color-item success200">200</div>
+            <div className="color-item success300">300</div>
           </div>
-          <h2>Error (error-*)</h2>
+          <h2>Error (error*)</h2>
           <div className="color-palette-container">
-            <div className="color-item error-100">100</div>
-            <div className="color-item error-200">200</div>
-            <div className="color-item error-300">300</div>
+            <div className="color-item error100">100</div>
+            <div className="color-item error200">200</div>
+            <div className="color-item error300">300</div>
           </div>
-          <h2>Warning (warning-*)</h2>
+          <h2>Warning (warning*)</h2>
           <div className="color-palette-container">
-            <div className="color-item warning-100">100</div>
-            <div className="color-item warning-200">200</div>
-            <div className="color-item warning-300">300</div>
+            <div className="color-item warning100">100</div>
+            <div className="color-item warning200">200</div>
+            <div className="color-item warning300">300</div>
           </div>
           <hr />
           <h1 id="headings">Headings</h1>
@@ -62,61 +56,25 @@ const StyleGuidePage = () => {
           <hr />
           <h1 id="headings-with-text">Headings with Text</h1>
           <h1>Heading 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque
-            aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero
-            nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
-          </p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
           <h2>Heading 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque
-            aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero
-            nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
-          </p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
           <h3>Heading 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque
-            aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero
-            nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
-          </p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
           <h4>Heading 4</h4>
-          <p>
-            Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque
-            aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero
-            nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
-          </p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
           <h5>Heading 5</h5>
-          <p>
-            Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque
-            aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero
-            nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
-          </p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
           <h6>Heading 6</h6>
-          <p>
-            Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque
-            aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero
-            nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
-          </p>
+          <p>The quick brown fox jumps over the lazy dog.</p>
           <hr />
           <h1 id="text-block">Block Elements</h1>
           <h2 id="paragraph">Paragraphs and Images</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
-          </p>
-          <p>
-            Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent
-            mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam
-            eget metus. Maecenas ornare tortor.
-          </p>
+          <p>The quick brown fox jumps over the lazy dog</p>
           <p>
             <img
               alt="Placeholder Image and Some Alt Text"
-              src="https://placehold.it/350x150"
+              src="https://placehold.co/350x150/"
               title="A title element for this placeholder image."
             />
           </p>
@@ -125,21 +83,12 @@ const StyleGuidePage = () => {
             est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.
           </p>
           <h2 id="blockquote">Blockquote</h2>
-          <p>
-            This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-          </p>
-          <blockquote>
-            "<strong>This is a blockquote.</strong> Lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc
-            iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt
-            nec, gravida vehicula, nisl."
-          </blockquote>
-          <p>
-            This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-          </p>
-          <h2 id="figure-caption">Figure-Caption</h2>
+          <p>This is a standard paragraph.</p>
+          <blockquote>This is a blockquote.</blockquote>
+
+          <h2>Figure</h2>
           <figure>
-            <img src="https://placehold.it/350x150" alt="A placeholder figure image." />
+            <img src="https://placehold.co/350/" alt="A placeholder figure image." />
             <figcaption>The figcaption element example</figcaption>
           </figure>
           <h2 id="details-summary">Details-Summary</h2>
@@ -244,13 +193,10 @@ const StyleGuidePage = () => {
           <hr />
           <h1 id="monospace">Monospace / Preformatted</h1>
           <p>Code block wrapped in "pre" and "code" tags</p>
-          <pre>
-            <code>{`// Loop through Divs using Javascript.
-var divs = document.querySelectorAll('div'), i;
-
-for (i = 0; i < divs.length; ++i) {
-  divs[i].style.color = "green";
-}`}</code>
+          <pre
+            style={{ background: `black`, color: `white`, padding: `15px`, borderRadius: `10px` }}
+          >
+            <code>console.log('hello-world')</code>
           </pre>
           <p>Monospace Text wrapped in "pre" tags</p>
           <pre>
@@ -352,35 +298,32 @@ for (i = 0; i < divs.length; ++i) {
           <h1 id="media-elements">Media</h1>
           <h2>The Audio Element:</h2>
           <audio controls>
-            <source src="https://simpl.info/audio/audio/audio.mp3" type="audio/mp3" />
-            <source src="https://simpl.info/audio/audio/audio.ogv" type="audio/ogg" />
+            <source
+              src="https://josephgattuso.github.io/js-projects/sound-board/sounds/applause.mp3"
+              type="audio/mp3"
+            />
             Your browser does not support the audio element.
           </audio>
           <h2>The Video Element:</h2>
-          <video width="320" height="240" controls>
-            <source
-              src="https://www.html5rocks.com/en/tutorials/video/basics/devstories.webm"
-              type='video/webm;codecs="vp8, vorbis"'
-            />
-            <source
-              src="https://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4"
-              type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'
-            />
-            <track
-              src="https://www.html5rocks.com/en/tutorials/video/basics/devstories-en.vtt"
-              label="English subtitles"
-              kind="subtitles"
-              srclang="en"
-              default
-            />
+          <p>
+            Courtesy of{' '}
+            <a
+              href=" https://www.bigbuckbunny.org/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              Big Buck Bunny
+            </a>
+          </p>
+          <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <h2>Embedded content:</h2>
+
+          <h2>Embedded content</h2>
           <p>YouTube video (iframe):</p>
           <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/l4f9QF0SGuQ"
+            src="https://www.youtube.com/embed/E8gmARGvPlI"
             frameborder="0"
             allowfullscreen
           ></iframe>
@@ -399,30 +342,25 @@ for (i = 0; i < divs.length; ++i) {
               <p>
                 <label for="text-field-disabled">Disabled Text Field:</label>
                 <br />
-                <input type="text" id="text-field-disabled" disabled value="I'm disabled" />
+                <input type="text" id="text-field-disabled" disabled value="Example text" />
               </p>
               <p>
                 <label for="text-field-readonly">Readonly Text Field:</label>
                 <br />
-                <input type="text" id="text-field-readonly" readonly value="I'm readonly" />
-              </p>
-              <p>
-                <label for="text-area">Text Area:</label>
-                <br />
-                <textarea id="text-area"></textarea>
+                <input type="text" id="text-field-readonly" readonly value="Example Text" />
               </p>
               <p>
                 <label for="text-area-disabled">Disabled Text Area:</label>
                 <br />
                 <textarea id="text-area-disabled" disabled>
-                  I'm disabled
+                  Example Text
                 </textarea>
               </p>
               <p>
                 <label for="text-area-readonly">Readonly Text Area:</label>
                 <br />
                 <textarea id="text-area-readonly" readonly>
-                  I'm readonly
+                  Example Text
                 </textarea>
               </p>
               <p>
@@ -484,16 +422,7 @@ for (i = 0; i < divs.length; ++i) {
                 <input type="checkbox" id="checkbox-4" name="checkboxes" value="4" disabled />
                 <label for="checkbox-4">Checkbox Disabled</label>
               </div>
-              <p>
-                <label for="password">Password:</label>
-                <br />
-                <input type="password" class="password" id="password" />
-              </p>
-              <p>
-                <label for="file">File Input:</label>
-                <br />
-                <input type="file" class="file" id="file" />
-              </p>
+
               <h3>HTML5-specific Form Elements</h3>
               <p>
                 <label for="email">Email:</label>
@@ -572,9 +501,7 @@ for (i = 0; i < divs.length; ++i) {
                 </meter>
               </p>
               <p>
-                <button class="button">Button Element</button>
-                <input class="button" type="reset" value="Clear" />
-                <input class="button" type="submit" value="Submit" />
+                <button type="button">Button Element</button>
               </p>
             </form>
           </fieldset>

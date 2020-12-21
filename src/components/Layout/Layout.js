@@ -8,6 +8,13 @@ import Footer from '../Footer';
 import Image from '../image';
 
 import '../../styles/main.scss';
+import styled from 'styled-components';
+
+const TitleContainer = styled.div`
+  max-width: calc(768px - (1rem * 2) - (0.3rem * 2));
+  width: 100%;
+  margin: 0 auto;
+`;
 
 const Layout = ({
   page,
@@ -32,7 +39,7 @@ const Layout = ({
       <Header hide={hideHeader} invisible={invisible} />
       <div id="content" />
       <main className={className}>
-        <div className="title-container">
+        <TitleContainer>
           {mainHeroImage ? (
             <div className={`hero-image-container ${invertMainImageFilter && 'invert'}`}>
               <Image
@@ -45,7 +52,7 @@ const Layout = ({
           ) : (
             <h1>{mainTitle}</h1>
           )}
-        </div>
+        </TitleContainer>
         {children}
       </main>
       <Footer hide={hideFooter} />
