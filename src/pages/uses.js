@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
-import Layout from '../components/Layout';
 import { uses } from '../../content/uses';
+
+import Layout from '../components/layout/layout.component';
 
 const ItemList = ({ items, parentIndex }) => (
   <ul>

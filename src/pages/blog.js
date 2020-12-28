@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql, navigate } from 'gatsby';
 import Pagination from '@material-ui/lab/Pagination';
 
-import Layout from '../components/Layout';
+import Layout from '../components/layout/layout.component';
 
 const BlogIndex = ({ data, pageContext, path }) => {
   const { edges: mdx } = data.allMdx;

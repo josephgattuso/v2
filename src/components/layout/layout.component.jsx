@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SEO from '../seo';
-
-import Header from '../Header';
-import Footer from '../Footer';
-
-import Image from '../image';
+import SEO from '../seo/seo.component';
+import Header from '../header/header.component';
+import Footer from '../footer/footer.component';
+import Image from '../image/image.component';
 
 import '../../styles/main.scss';
 import styled from 'styled-components';

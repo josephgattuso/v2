@@ -3,8 +3,8 @@ import { Link } from 'gatsby';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button';
 
-import Layout from '../components/Layout';
-import Image from '../components/image';
+import Layout from '../components/layout/layout.component';
+import Image from '../components/image/image.component';
 
 import styled from 'styled-components';
 

@@ -3,8 +3,8 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
 
-import DarkModeToggle from '../DarkModeToggle';
-import HamburgerToggle from '../HamburgerToggle';
+import DarkModeToggle from '../dark-mode-toggle/dark-mode-toggle.component';
+import HamburgerToggle from '../hamburger-toggle/hamburger-toggle.component';
 
 const NAV_LINKS = [
   {
