@@ -1,5 +1,11 @@
 export const projects = [
   {
+    name: 'Monsters Rolodex',
+    description: 'Building a contact directory app using React.',
+    tryItUrl: 'https://josephgattuso.github.io/monsters-rolodex',
+    repo: 'https://github.com/josephgattuso/monsters-rolodex',
+  },
+  {
     name: 'Calculator',
     description: 'Creating a simple calculator with plain JavaScript.',
     tryItUrl: 'https://josephgattuso.github.io/js-projects/calculator',
