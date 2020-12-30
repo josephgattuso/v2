@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
 import SEO from '../seo/seo.component';
 import Header from '../header/header.component';
 import Footer from '../footer/footer.component';
 import Image from '../image/image.component';
 
 import '../../styles/main.scss';
-import styled from 'styled-components';
 
 const TitleContainer = styled.div`
   max-width: calc(768px - (1rem * 2) - (0.3rem * 2));
