@@ -22,6 +22,7 @@ const BlogIndex = ({ data, pageContext, path }) => {
               <div className="post-preview" key={mdx.id}>
                 <Link to={mdx.fields.slug}>
                   <h2 classname="title">{mdx.frontmatter.title}</h2>
+                  <p>{mdx.frontmatter.date}</p>
                 </Link>
                 <p className="description">{mdx.excerpt}</p>
                 <Link to={mdx.fields.slug}>continue reading &rarr;</Link>
@@ -54,6 +55,7 @@ export const pageQuery = graphql`
           excerpt
           frontmatter {
             title
+            date(formatString: "YYYY MMMM Do")
           }
           fields {
             slug
