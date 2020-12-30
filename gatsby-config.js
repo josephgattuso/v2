@@ -109,8 +109,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`IBM Plex Sans\:400,400i,500,500i,700`],
-        fonts: [`IBM Plex Sans Serif\:400,400i,500,500i,700`],
+        fonts: [`IBM Plex Sans\:400,400i,500,500i,700,700i`],
+        display: 'swap',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
