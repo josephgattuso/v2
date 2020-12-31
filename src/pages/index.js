@@ -67,15 +67,11 @@ const ProfileCard = styled.div`
   }
 `;
 
-const IndexWrapper = styled.main``;
-
-const PostWrapper = styled.div``;
-
 export default ({ data }) => {
   return (
     <Layout hideFooter invisible className="homepage">
-      <IndexWrapper className="wrapper">
-        <div className="content-container with-margin">
+      <div className="wrapper">
+        <article className="content-container with-margin">
           <ProfileCard>
             <div className="title">
               <h1>
@@ -90,7 +86,7 @@ export default ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                 >
-                  github
+                  GitHub
                 </Button>
                 <Button
                   variant="outlined"
@@ -99,7 +95,16 @@ export default ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                 >
-                  linkedin
+                  LinkedIn
+                </Button>
+                <Button
+                  variant="outlined"
+                  color="default"
+                  href="https://twitter.com/@joeetuso"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  Twitter
                 </Button>
               </ButtonGroup>
             </div>
@@ -107,11 +112,9 @@ export default ({ data }) => {
           </ProfileCard>
           <div className="description">
             <p>Hi there! My name is Joseph and I'm a Web Developer based in London.</p>
-
             <p>
               View my <Link to="/projects">recent work</Link>.
             </p>
-
             <p>
               You can also reach me on{' '}
               <a
@@ -124,18 +127,20 @@ export default ({ data }) => {
               .
             </p>
           </div>
-        </div>
-        <h3>Latest Posts</h3>
-        {data.allMdx.nodes.map(({ id, excerpt, frontmatter, fields }) => (
-          <PostWrapper key={id}>
-            <Link to={fields.slug}>
-              <h3>{frontmatter.title}</h3>
-              <p>{frontmatter.date}</p>
-              <p>{excerpt}</p>
-            </Link>
-          </PostWrapper>
-        ))}
-      </IndexWrapper>
+          <section>
+            <h3>Latest Posts</h3>
+            {data.allMdx.nodes.map(({ id, excerpt, frontmatter, fields }) => (
+              <div className="post-wrapper" key={id}>
+                <Link to={fields.slug}>
+                  <h3>{frontmatter.title}</h3>
+                  <p>{frontmatter.date}</p>
+                  <p>{excerpt}</p>
+                </Link>
+              </div>
+            ))}
+          </section>
+        </article>
+      </div>
     </Layout>
   );
 };

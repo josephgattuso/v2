@@ -10,9 +10,7 @@ import styled from 'styled-components';
 import Layout from '../components/layout/layout.component';
 
 import {
-  ArticleContainer,
-  ArticleHeader,
-  ArticleDate,
+  ArticleH1,
   ArticleH2,
   ArticleH3,
   ArticleH4,
@@ -26,65 +24,10 @@ import {
   ArticleOl,
   ArticleStrong,
   ArticleUl,
+  NextRead,
 } from '../styles/PostStyles';
 
 // const shortcodes = { Link }; // Provide common components here
-
-const NextRead = styled.section`
-  h5 {
-    text-transform: uppercase;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-
-    a {
-      background: none;
-      border-radius: 4px;
-      border: 2px solid var(--accent);
-      padding: 1rem;
-      text-decoration: none;
-    }
-
-    a:hover {
-      background: var(--accent-secondary);
-      color: var(--default-text-inverted);
-    }
-
-    .post-preview-container {
-      height: 3rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    @media (max-width: 330px) {
-      .gatsby-image-wrapper {
-        height: 250px;
-      }
-
-      h2.post-subtitle {
-        color: var(--text-secondary);
-        font-size: 0.75rem;
-      }
-
-      .post-body {
-        figure {
-          img {
-            height: 250px;
-          }
-        }
-      }
-
-      .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row-gap: 1rem;
-      }
-    }
-  }
-`;
 
 export default ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx;
@@ -96,14 +39,16 @@ export default ({ data, pageContext }) => {
   return (
     <Layout page={frontmatter.title} description={frontmatter.description} isBlogPost>
       <div className="wrapper">
-        <ArticleContainer className="content-container blog-post with-padding">
-          <ArticleHeader>{frontmatter.title}</ArticleHeader>
-          <ArticleDate>{frontmatter.date}</ArticleDate>
+        <article className="content-container blog-post with-padding">
+          <header>
+            <h2>{frontmatter.title}</h2>
+            <p>{frontmatter.date}</p>
+          </header>
           <Img fluid={featuredImgFluid} />
           <div className="markdown">
             <MDXProvider
               components={{
-                h1: ArticleH2, // H1 reserved for article semantic title
+                h1: ArticleH1, // H1 reserved for article semantic title
                 h2: ArticleH2,
                 h3: ArticleH3,
                 h4: ArticleH4,
@@ -124,7 +69,7 @@ export default ({ data, pageContext }) => {
           </div>
 
           <NextRead className="next-read">
-            <h5>Next Read</h5>
+            <h3>Next Read</h3>
             <div className="container">
               {previous === false ? null : (
                 <>
@@ -146,7 +91,7 @@ export default ({ data, pageContext }) => {
               )}
             </div>
           </NextRead>
-        </ArticleContainer>
+        </article>
       </div>
     </Layout>
   );
