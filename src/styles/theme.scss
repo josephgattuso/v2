@@ -32,6 +32,7 @@ body.dark {
   --text: var(--default-text-inverted);
   --text-secondary: var(--chrome400);
   --accent: var(--primary100);
+  --accent-secondary: rgba(221, 44, 0, 0.4);
   --box-shadow-layer-1: rgba(255, 255, 255, 0.2);
   --box-shadow-layer-2: rgba(255, 255, 255, 0.14);
   --box-shadow-layer-3: rgba(255, 255, 255, 0.12);
@@ -47,6 +48,7 @@ body.light {
   --text: var(--default-text);
   --text-secondary: var(--chrome500);
   --accent: var(--primary100);
+  --accent-secondary: rgba(221, 44, 0, 0.8);
   --box-shadow-layer-1: rgba(0, 0, 0, 0.2);
   --box-shadow-layer-2: rgba(0, 0, 0, 0.14);
   --box-shadow-layer-3: rgba(0, 0, 0, 0.12);
