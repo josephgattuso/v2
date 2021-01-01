@@ -28,7 +28,7 @@ const NAV_LINKS = [
   {
     id: shortid.generate(),
     name: 'CV',
-    path: '/sample.pdf',
+    // path: 'https://josephgattuso.github.io/resume/resume.pdf',
     internal: false,
   },
 ];
