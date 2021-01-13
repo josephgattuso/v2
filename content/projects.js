@@ -1,5 +1,12 @@
 export const projects = [
   {
+    name: 'CRWN Clothing',
+    description:
+      'Full-stack React e-commerce application. Built with React/Redux and Stripe integration (for demo only)',
+    tryItUrl: 'https://gattuso-crwn-live.herokuapp.com',
+    repo: 'https://github.com/josephgattuso/crwn-clothing',
+  },
+  {
     name: 'Monsters Rolodex',
     description: 'Building a contact directory app using React.',
     tryItUrl: 'https://josephgattuso.github.io/monsters-rolodex',
